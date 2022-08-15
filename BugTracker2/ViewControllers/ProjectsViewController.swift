@@ -7,26 +7,10 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class ProjectsViewController: UIViewController {
     
     @IBOutlet var tv: UITableView!
-    struct Project {
-        var title: String
-        var description: String
-    }
-    let projects = [
-        //esto va a pasar a models despues, y dsp lo vamos a sacar de una base de datos
-        Project(
-            title: "Bug Tracker",
-            description: "Bug tracker application"
-        ),
-        Project(
-            title: "Netflix Clone",
-            description: "Excellent netflix clone"
-        )
-    ]
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tv.delegate = self
@@ -35,13 +19,13 @@ class DashboardViewController: UIViewController {
     }
 }
 
-extension DashboardViewController: UITableViewDelegate {
+extension ProjectsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped")
+        print("tapped " + projects[indexPath.row].title)
     }
 }
 
-extension DashboardViewController: UITableViewDataSource {
+extension ProjectsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projects.count
@@ -49,7 +33,7 @@ extension DashboardViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tv.dequeueReusableCell(withIdentifier: "projectsCell", for: indexPath)
-        let project = self.projects[indexPath.row]
+        let project = projects[indexPath.row]
         
         cell.textLabel?.text = project.title
         cell.detailTextLabel?.text = project.description
