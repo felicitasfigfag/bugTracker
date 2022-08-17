@@ -18,14 +18,17 @@ class TeamViewController: UIViewController {
 
     }
 }
-
+//Delegate
 extension TeamViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tapped " + team[indexPath.row].name)
     }
 }
-
+//Data source
 extension TeamViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return team.count
