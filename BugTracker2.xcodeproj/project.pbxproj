@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		198A486728AA9841002B91A5 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A486628AA9841002B91A5 /* TeamViewController.swift */; };
 		19BBBF6028AA89C700798EE8 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF5F28AA89C700798EE8 /* ProjectsViewController.swift */; };
 		19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */; };
 		19DA03EA28AA485A0093AC1B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* Models.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		198A486628AA9841002B91A5 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		19BBBF5F28AA89C700798EE8 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		19DA03E928AA485A0093AC1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			children = (
 				19BBBF5F28AA89C700798EE8 /* ProjectsViewController.swift */,
 				19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */,
-				198A486628AA9841002B91A5 /* TeamViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F7CBC7289D163F002BA027 /* BugTracker2.xcdatamodeld in Sources */,
-				198A486728AA9841002B91A5 /* TeamViewController.swift in Sources */,
 				19BBBF6028AA89C700798EE8 /* ProjectsViewController.swift in Sources */,
 				19F7CBC1289D163F002BA027 /* ViewController.swift in Sources */,
 				19F7CBBD289D163F002BA027 /* AppDelegate.swift in Sources */,

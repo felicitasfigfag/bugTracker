@@ -10,7 +10,7 @@ import UIKit
 class ProjectsViewController: UIViewController {
     
     @IBOutlet var tv: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tv.delegate = self
@@ -19,10 +19,14 @@ class ProjectsViewController: UIViewController {
     }
 }
 
+
 extension ProjectsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tapped " + projects[indexPath.row].title)
-    }
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "project") as? ProjectViewController {
+            navigationController?.pushViewController(vc, animated: true)}
+            
+        }
 }
 
 extension ProjectsViewController: UITableViewDataSource {

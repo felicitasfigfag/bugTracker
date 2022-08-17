@@ -9,31 +9,29 @@ import UIKit
 
 class ProjectViewController: UIViewController {
     
+    var mySections = [ticketData, teamData]
+    
     @IBOutlet var tv: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tv.delegate = self
         tv.dataSource = self
-
     }
-    lazy var mySections: [SectionData] = {
-        let section1 = SectionData(title: "Tickets", data: "Update interface", "Move strings from VC", "Commit to github", "Change styles from cells", "Add buttons to add tm/ticket", "Add navigation")
-        let section2 = SectionData(title: "Team", data: "Felicitas", "Gregorio", "Rafael")
-
-        return [section1, section2]
-    }()
 }
+
 
 extension ProjectViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped ")
+        let section = mySections[indexPath.section]
+        let cell = mySections[indexPath.section][indexPath.row]
+        print(section.title, " : ", cell.title)
     }
 }
 
 extension ProjectViewController: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+func numberOfSections(in tableView: UITableView) -> Int {
         return mySections.count
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -45,37 +43,20 @@ extension ProjectViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellTitle = mySections[indexPath.section][indexPath.row]
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: pString.cellIdentifier, for: indexPath) as! UITableViewCell
-        cell.textLabel?.text = cellTitle
-
+        let cells = mySections[indexPath.section][indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: pString.cellIdentifier, for: indexPath)
+        cell.textLabel?.text = cells.title
+        cell.detailTextLabel?.text = cells.description
+        //other?
         return cell
     }
    
 }
 
-
-
-
-struct SectionData {
-    let title: String
-    let data : [String]
-
-    //number of items in a section
-    var numberOfItems: Int {
-        return data.count
-    }
-
-    subscript(index: Int) -> String {
-        return data[index]
-    }
-}
-
 extension SectionData {
     //  Putting a new init method here means we can
     //  keep the original, memberwise initaliser.
-    init(title: String, data: String...) {
+    init(title: String, data: dataItem...) {
         self.title = title
         self.data  = data
     }
