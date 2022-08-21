@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProjectsViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     @IBOutlet var tv: UITableView!
     
@@ -20,16 +20,16 @@ class ProjectsViewController: UIViewController {
 }
 
 
-extension ProjectsViewController: UITableViewDelegate {
+extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tapped " + projects[indexPath.row].title)
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "project") as? ProjectViewController {
-            navigationController?.pushViewController(vc, animated: true)}
-            
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProjectViewController") as! ProjectViewController
+        self.navigationController?.pushViewController(vc, animated: false)
+        vc.title = projects[indexPath.row].title
         }
 }
 
-extension ProjectsViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projects.count

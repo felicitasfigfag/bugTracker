@@ -10,9 +10,10 @@ import UIKit
 class ProjectViewController: UIViewController {
     
     var mySections = [ticketData, teamData]
+    //var title : String()
     
     @IBOutlet var tv: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tv.delegate = self
