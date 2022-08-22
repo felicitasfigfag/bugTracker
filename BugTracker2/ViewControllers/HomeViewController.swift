@@ -22,11 +22,14 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped " + projects[indexPath.row].title)
+        print("tapped " + projects[indexPath.row].info.title)
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProjectViewController") as! ProjectViewController
-        self.navigationController?.pushViewController(vc, animated: false)
-        vc.title = projects[indexPath.row].title
+    //performSegue(withIdentifier: "seeTickets", sender: self)
+       self.navigationController?.pushViewController(vc, animated: false)
+        vc.project = projects[indexPath.row]
+        vc.title = projects[indexPath.row].info.title
         }
+   
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -39,8 +42,8 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tv.dequeueReusableCell(withIdentifier: "projectsCell", for: indexPath)
         let project = projects[indexPath.row]
         
-        cell.textLabel?.text = project.title
-        cell.detailTextLabel?.text = project.description
+        cell.textLabel?.text = project.info.title
+        cell.detailTextLabel?.text = project.info.description
         return cell
     }
 }
