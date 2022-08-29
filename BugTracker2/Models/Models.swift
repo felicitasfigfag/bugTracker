@@ -4,11 +4,9 @@
 //
 //  Created by Felicitas Figueroa Fagalde on 15.08.22.
 //
-
 import Foundation
 
 //In here I'll gather information that will be extracted from backend in the future.
-
 
 // Project es el modelo de proyecto
 struct Project {
@@ -32,30 +30,27 @@ struct projectInfo {
 
 
 ///The objects: ticket and team
-struct ticketItem {
+struct dataItem {
     let title: String
-    let description: String
-    let other: String?
-}
-struct teamItem {
-    let name: String
-    let email: String
-    let other: String?
+    let detail: String
+    let other: String
 }
 
 // Section data (Project)
 //With this we can use different info for the different sections of the same table
-
 struct SectionData {
     let sectionTitle: String
-    let data : dataItem
-}
+    let data : [dataItem]
+    
+    var numberOfItems: Int {
+        return data.count
+    }
+
+    subscript(index: Int) -> dataItem {
+        return data[index]
+    }}
 
 ///The items of data the project will receive
-enum dataItem {
-    case ticket(ticketItem)
-    case team(teamItem)
-}
 
 
 
@@ -66,37 +61,57 @@ let bugTracker = Project(
                                       description: "New project"),
                     
                     sections: [SectionData(sectionTitle: "Tickets",
-                                           data: dataItem.ticket(
-                                                                ticketItem(title: "Update interface",
-                                                                           description: "Add the remaining screens",
-                                                                           other: "Type: Other"))),
+                                           data: [dataItem(title: "Update interface",
+                                                           detail: "Add the remaining screens",
+                                                           other: "Type: Other"),
+                                                  dataItem(title: "Do something",
+                                                           detail: "This is something we do",
+                                                           other: "BLalalal")]),
                                SectionData(sectionTitle: "Team",
-                                           data: dataItem.team(
-                                                                teamItem(name: "Felicitas",
-                                                                         email: "felifigueroaf@gmail.com",
-                                                                         other: "3287652345870")))])
+                                           data: [dataItem(title: "Felicitas",
+                                                           detail: "felifigueroaf@gmail.com",
+                                                           other: "3287652345870"),
+                                                  dataItem(title: "Feli",
+                                                           detail: "felicitas@gmail",
+                                                           other: "3e93949")])])
+
+let defaultProject = Project(
+                    info: projectInfo(title: "default",
+                                      description: "default default"),
+                    
+                    sections: [SectionData(sectionTitle: "Tickets",
+                                           data: [dataItem(title: "default default",
+                                                           detail: "default",
+                                                           other: "default"),
+                                                  dataItem(title: "default",
+                                                           detail: "default",
+                                                           other: "default")]),
+                               SectionData(sectionTitle: "Team",
+                                           data: [dataItem(title: "default",
+                                                           detail: "default",
+                                                           other: "default"),
+                                                  dataItem(title: "default",
+                                                           detail: "default@gmail",
+                                                           other: "default")])])
 
 let netflixClone = Project(
                     info: projectInfo(title: "Netflix Clone",
                                       description: "Dupe projects"),
                     
                     sections: [SectionData(sectionTitle: "Tickets",
-                                           data: dataItem.ticket(
-                                                                ticketItem(title: "Start a branch on github",
-                                                                           description: "Add all the information",
-                                                                           other: "Type: Other"))),
+                                           data: [dataItem(title: "Start a branch on github",
+                                                           detail: "Add all the information",
+                                                           other: "Type: Other")]),
                                SectionData(sectionTitle: "Team",
-                                           data: dataItem.team(
-                                                                teamItem(name: "Gregorio",
-                                                                         email: "villagrangregorio@gmail.com",
-                                                                         other: "876543456789")))])
+                                           data: [dataItem(title: "Gregorio",
+                                                           detail: "villagrangregorio@gmail.com",
+                                                           other: "876543456789")])])
 
 let projects = [bugTracker, netflixClone]
 
 
 
 //Strings extension: Project
-
 struct ProjStrings {
     var sTitle: String
     var sTitle2: String
