@@ -9,7 +9,6 @@ import UIKit
 
 class ProjectViewController: UIViewController {
     
-    //var mySections = [ticketData, teamData]
     var project : Project?
     @IBOutlet var tv: UITableView!
     
@@ -19,7 +18,6 @@ class ProjectViewController: UIViewController {
         tv.dataSource = self
         
     }
-    
     
 }
 

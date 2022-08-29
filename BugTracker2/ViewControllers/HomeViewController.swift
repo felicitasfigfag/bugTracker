@@ -22,9 +22,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped " + projects[indexPath.row].info.title)
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProjectViewController") as! ProjectViewController
-    //performSegue(withIdentifier: "seeTickets", sender: self)
        self.navigationController?.pushViewController(vc, animated: false)
         vc.project = projects[indexPath.row]
         vc.title = projects[indexPath.row].info.title

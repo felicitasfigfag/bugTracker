@@ -46,8 +46,8 @@
             filePath = "BugTracker2/ViewControllers/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "BugTracker2/ViewControllers/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "BugTracker2/ViewControllers/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,58 +94,10 @@
             filePath = "BugTracker2/ViewControllers/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "HomeViewController"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3A4FE1B7-218F-4655-96B1-4A78C3536507"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "ProjectViewController"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "047C24D3-E982-4DE6-96F2-A0A3C9468262"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FC84B4E4-5210-448C-BAEC-934A22BC19AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -158,8 +110,8 @@
             filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -174,8 +126,8 @@
             filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -190,42 +142,10 @@
             filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "ProjectViewController"
             landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CD9214D1-FF92-4B5A-BEC5-3D8177A7DDF8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "ProjectViewController"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "46B1294D-D096-4D76-A9D3-C38B683375EF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "numberOfSections(in:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,17 +158,17 @@
             filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "ProjectViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - c8ebb23b5db3d050"
+                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - 874454796ed0a885"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BugTracker2.ProjectViewController.mySections.getter : Swift.Array&lt;BugTracker2.SectionData&gt;"
+                  symbolName = "BugTracker2.ProjectViewController.tv.getter : Swift.Optional&lt;__C.UITableView&gt;"
                   moduleName = "BugTracker2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/felicitasfigfag/Desktop/bugTracker/BugTracker2/ViewControllers/ProjectViewController.swift"
@@ -259,11 +179,11 @@
                   offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - a529dfb409d5e064"
+                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - c83eae052c117c89"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BugTracker2.ProjectViewController.mySections.setter : Swift.Array&lt;BugTracker2.SectionData&gt;"
+                  symbolName = "BugTracker2.ProjectViewController.tv.setter : Swift.Optional&lt;__C.UITableView&gt;"
                   moduleName = "BugTracker2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/felicitasfigfag/Desktop/bugTracker/BugTracker2/ViewControllers/ProjectViewController.swift"
@@ -271,14 +191,14 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "112">
+                  offsetFromSymbolStart = "108">
                </Location>
                <Location
-                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - 366b207e240f5c55"
+                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - dd1358445b256786"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BugTracker2.ProjectViewController.mySections.modify : Swift.Array&lt;BugTracker2.SectionData&gt;"
+                  symbolName = "BugTracker2.ProjectViewController.tv.modify : Swift.Optional&lt;__C.UITableView&gt;"
                   moduleName = "BugTracker2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/felicitasfigfag/Desktop/bugTracker/BugTracker2/ViewControllers/ProjectViewController.swift"
@@ -289,11 +209,11 @@
                   offsetFromSymbolStart = "0">
                </Location>
                <Location
-                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - 71f7b8950deb2d3"
+                  uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - 8ac2635b6fdf6f20"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BugTracker2.ProjectViewController.mySections.modify : Swift.Array&lt;BugTracker2.SectionData&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  symbolName = "BugTracker2.ProjectViewController.tv.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "BugTracker2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/felicitasfigfag/Desktop/bugTracker/BugTracker2/ViewControllers/ProjectViewController.swift"
@@ -316,7 +236,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "148">
+                  offsetFromSymbolStart = "152">
                </Location>
                <Location
                   uuid = "DA858577-4537-4FE1-9049-2FDF20BCCFB9 - b71d55a666190fec"
@@ -331,7 +251,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "124">
+                  offsetFromSymbolStart = "128">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -346,8 +266,8 @@
             filePath = "BugTracker2/ViewControllers/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,8 +282,8 @@
             filePath = "BugTracker2/ViewControllers/ProjectViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "ProjectViewController"
             landmarkType = "21">
          </BreakpointContent>

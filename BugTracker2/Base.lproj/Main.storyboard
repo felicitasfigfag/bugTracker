@@ -108,6 +108,16 @@
             </objects>
             <point key="canvasLocation" x="-1054" y="190"/>
         </scene>
+        <!--New Project-->
+        <scene sceneID="Vvj-ey-AJC">
+            <objects>
+                <viewController title="New Project" id="MyG-7b-6La" customClass="NewProjectViewController" customModule="BugTracker2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yKy-zq-zJL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKv-sr-N4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3603" y="-513"/>
+        </scene>
         <!--Home-->
         <scene sceneID="HX5-vB-KJe">
             <objects>
@@ -116,8 +126,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="odk-ei-87F">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="odk-ei-87F">
                                 <rect key="frame" x="20" y="98" width="374" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="projectsCell" textLabel="C2g-ms-P4C" detailTextLabel="f6K-3i-bp1" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="qrm-uc-j08">
@@ -152,18 +163,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZuB-9o-Yv6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="odk-ei-87F" firstAttribute="bottom" secondItem="ZuB-9o-Yv6" secondAttribute="bottom" id="Lkl-SF-irD"/>
-                            <constraint firstItem="ZuB-9o-Yv6" firstAttribute="trailing" secondItem="odk-ei-87F" secondAttribute="trailing" constant="20" id="VY1-fV-NjF"/>
-                            <constraint firstItem="odk-ei-87F" firstAttribute="top" secondItem="ZuB-9o-Yv6" secondAttribute="top" constant="10" id="nr1-R3-dRN"/>
-                            <constraint firstItem="odk-ei-87F" firstAttribute="leading" secondItem="ZuB-9o-Yv6" secondAttribute="leading" constant="20" id="w5X-eX-dNl"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="f1K-Ld-LQR">
                         <imageReference key="image" image="homekit" catalog="system" symbolScale="medium"/>
                         <imageReference key="selectedImage" image="homekit" catalog="system" symbolScale="large"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="Home" id="ETX-di-gLD"/>
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="ETX-di-gLD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="maB-bz-Oq4">
+                            <color key="tintColor" red="0.039215686270000001" green="0.37481403349999998" blue="0.99836754800000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="MyG-7b-6La" kind="show" id="gkL-Ym-2W5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tv" destination="odk-ei-87F" id="YxE-Uf-BCc"/>
                     </connections>
@@ -506,6 +518,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="f0e-Xt-wF5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hq2-oG-jP6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
