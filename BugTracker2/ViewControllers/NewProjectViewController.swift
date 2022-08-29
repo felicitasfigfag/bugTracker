@@ -6,20 +6,35 @@
 //
 
 import UIKit
+import TTGTags
 
-class NewProjectViewController: UIViewController {
+class NewProjectViewController: UIViewController, TTGTextTagCollectionViewDelegate {
     
-    @IBOutlet var picker : UIPickerView!
+    let cv = TTGTextTagCollectionView()
     
-    let team = ["Felicitas", "Gregorio", "Nick", "Joe", "Kevin"]
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.title = "New Project"
-        // Do any additional setup after loading the view.
+        
+        cv.alignment = .center
+        cv.delegate = self
+        view.addSubview(cv)
+        
+//        let config = TTGTextTagStyle()
+//        config.backgroundColor = .blue
+//        config.borderColor = .darkGray
+//        config.borderWidth = 1
+        cv.addTags(["TTG", "Tag", "collection", "view"])
+        
     }
     
-
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        cv.frame = CGRect(x: 0, y: 100, width: view.frame.size.width, height: 300)
+    }
+    
+    //configuracoin
 
 
 }

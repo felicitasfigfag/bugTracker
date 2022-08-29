@@ -28,6 +28,10 @@ struct projectInfo {
     var description: String
 }
 
+struct teamMember {
+    let name: String
+    let email: String
+}
 
 ///The objects: ticket and team
 struct dataItem {
@@ -109,6 +113,10 @@ let netflixClone = Project(
 
 let projects = [bugTracker, netflixClone]
 
+let team = [teamMember(name: "Felicitas", email: "felifigueroaf@gmail.com"),
+            teamMember(name: "Gregorio", email: "villagrangregorio@gmail.com"),
+            teamMember(name: "Hansa Lucas", email: "hanslucas@gmail.com"),
+            teamMember(name: "Thackery Binx", email: "gatosarnoso@gmail.com")]
 
 
 //Strings extension: Project
