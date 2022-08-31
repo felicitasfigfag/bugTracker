@@ -10,8 +10,8 @@
 		198A487028B24BF1002B91A5 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A486F28B24BF1002B91A5 /* AdminViewController.swift */; };
 		198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A487128B24D79002B91A5 /* DashboardsViewController.swift */; };
 		198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */; };
-		198A48B828BCF7A0002B91A5 /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48B728BCF7A0002B91A5 /* TrackListView.swift */; };
-		198A48BA28BCF90B002B91A5 /* PlaylistDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48B928BCF90B002B91A5 /* PlaylistDetailController.swift */; };
+		198A48FF28BF8531002B91A5 /* TeamPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48FE28BF8531002B91A5 /* TeamPickerViewController.swift */; };
+		198A490128BF89FA002B91A5 /* TeamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A490028BF89FA002B91A5 /* TeamPickerView.swift */; };
 		19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */; };
 		19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */; };
 		19DA03EA28AA485A0093AC1B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* Models.swift */; };
@@ -51,8 +51,8 @@
 		198A486F28B24BF1002B91A5 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		198A487128B24D79002B91A5 /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
 		198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
-		198A48B728BCF7A0002B91A5 /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
-		198A48B928BCF90B002B91A5 /* PlaylistDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailController.swift; sourceTree = "<group>"; };
+		198A48FE28BF8531002B91A5 /* TeamPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickerViewController.swift; sourceTree = "<group>"; };
+		198A490028BF89FA002B91A5 /* TeamPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickerView.swift; sourceTree = "<group>"; };
 		19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		19DA03E928AA485A0093AC1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 		198A48B628BCF783002B91A5 /* ProbandoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				198A48B728BCF7A0002B91A5 /* TrackListView.swift */,
-				198A48B928BCF90B002B91A5 /* PlaylistDetailController.swift */,
+				198A48FE28BF8531002B91A5 /* TeamPickerViewController.swift */,
+				198A490028BF89FA002B91A5 /* TeamPickerView.swift */,
 			);
 			path = ProbandoPicker;
 			sourceTree = "<group>";
@@ -213,7 +213,6 @@
 				864B1DE47BC14BD773410F2E /* Pods-BugTracker2Tests.debug.xcconfig */,
 				D5682AA48709C26D9C02F2FC /* Pods-BugTracker2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -466,18 +465,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198A48B828BCF7A0002B91A5 /* TrackListView.swift in Sources */,
 				198A487028B24BF1002B91A5 /* AdminViewController.swift in Sources */,
 				19F7CBC7289D163F002BA027 /* BugTracker2.xcdatamodeld in Sources */,
 				198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */,
 				19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */,
 				19F7CBC1289D163F002BA027 /* ViewController.swift in Sources */,
-				198A48BA28BCF90B002B91A5 /* PlaylistDetailController.swift in Sources */,
 				19F7CBBD289D163F002BA027 /* AppDelegate.swift in Sources */,
 				19F7CBBF289D163F002BA027 /* SceneDelegate.swift in Sources */,
+				198A490128BF89FA002B91A5 /* TeamPickerView.swift in Sources */,
 				19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */,
 				19DA03EA28AA485A0093AC1B /* Models.swift in Sources */,
 				198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */,
+				198A48FF28BF8531002B91A5 /* TeamPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

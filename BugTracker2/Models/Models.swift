@@ -28,7 +28,7 @@ struct projectInfo {
     var description: String
 }
 
-struct teamMember {
+struct teamMember: Hashable {
     let name: String
     let email: String
 }
