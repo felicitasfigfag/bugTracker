@@ -167,7 +167,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                 <connections>
-                                    <action selector="showView" destination="JEb-W4-baO" eventType="touchUpInside" id="9pe-NU-81x"/>
+                                    <action selector="showPickerView" destination="JEb-W4-baO" eventType="touchUpInside" id="fzd-dQ-lad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,10 +195,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="nhR-Gn-O5d">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="CaC-lD-OlV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="CaC-lD-OlV">
+                            <connections>
+                                <action selector="saveProj" destination="JEb-W4-baO" id="53U-Qm-020"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addBtn" destination="C9k-U7-XM8" id="djh-jC-Wvy"/>
+                        <outlet property="projDescription" destination="xKy-2w-q9v" id="2XQ-0c-tNX"/>
+                        <outlet property="projTitle" destination="oWd-d5-hQ2" id="vNr-in-xzJ"/>
                         <outlet property="teamTv" destination="VP1-EX-NZI" id="y7c-4I-XxR"/>
                     </connections>
                 </viewController>

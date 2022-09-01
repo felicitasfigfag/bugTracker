@@ -55,7 +55,7 @@ class TeamPickerView: UIView {
         if delegate != nil {
         let index = picker.selectedRow(inComponent: 0)
         let tm = team[index]
-            print(tm.name)
+        print(tm.title)
         delegate?.addTeamMember(tm: tm)
 
     }
@@ -76,11 +76,11 @@ extension TeamPickerView : UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let tm = team[row]
-        return tm.name
+        return tm.title
     }
 }
 protocol TeamPickerDelegate {
 
-    func addTeamMember(tm: teamMember)
+    func addTeamMember(tm: dataItem)
 
 }

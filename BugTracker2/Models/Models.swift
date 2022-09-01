@@ -34,10 +34,10 @@ struct teamMember: Hashable {
 }
 
 ///The objects: ticket and team
-struct dataItem {
+struct dataItem : Hashable {
     let title: String
     let detail: String
-    let other: String
+    let other: String?
 }
 
 // Section data (Project)
@@ -113,10 +113,10 @@ let netflixClone = Project(
 
 let projects = [bugTracker, netflixClone]
 
-let team = [teamMember(name: "Felicitas", email: "felifigueroaf@gmail.com"),
-            teamMember(name: "Gregorio", email: "villagrangregorio@gmail.com"),
-            teamMember(name: "Hansa Lucas", email: "hanslucas@gmail.com"),
-            teamMember(name: "Thackery Binx", email: "gatosarnoso@gmail.com")]
+let team = [dataItem(title: "Felicitas", detail: "felifigueroaf@gmail.com", other: ""),
+            dataItem(title: "Gregorio", detail: "villagrangregorio@gmail.com", other: ""),
+            dataItem(title: "Hansa Lucas", detail: "hanslucas@gmail.com", other: ""),
+            dataItem(title: "Thackery Binx", detail: "gatosarnoso@gmail.com", other: "")]
 
 
 //Strings extension: Project

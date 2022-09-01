@@ -10,6 +10,7 @@
 		198A487028B24BF1002B91A5 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A486F28B24BF1002B91A5 /* AdminViewController.swift */; };
 		198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A487128B24D79002B91A5 /* DashboardsViewController.swift */; };
 		198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */; };
+		198A490328C0EA2E002B91A5 /* TeamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A490228C0EA2E002B91A5 /* TeamPickerView.swift */; };
 		19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */; };
 		19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */; };
 		19DA03EA28AA485A0093AC1B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* Models.swift */; };
@@ -49,6 +50,7 @@
 		198A486F28B24BF1002B91A5 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		198A487128B24D79002B91A5 /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
 		198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
+		198A490228C0EA2E002B91A5 /* TeamPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPickerView.swift; sourceTree = "<group>"; };
 		19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		19DA03E928AA485A0093AC1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -108,11 +110,9 @@
 		1938B1EE28AA39D300DB1631 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */,
-				19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */,
-				198A486F28B24BF1002B91A5 /* AdminViewController.swift */,
-				198A487128B24D79002B91A5 /* DashboardsViewController.swift */,
-				198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */,
+				198A490628C0EA49002B91A5 /* Dashboard */,
+				198A490528C0EA41002B91A5 /* Admin */,
+				198A490428C0EA3B002B91A5 /* Projects */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -120,8 +120,44 @@
 		1938B1EF28AA45B600DB1631 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				198A490228C0EA2E002B91A5 /* TeamPickerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		198A490428C0EA3B002B91A5 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */,
+				19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */,
+				198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		198A490528C0EA41002B91A5 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				198A486F28B24BF1002B91A5 /* AdminViewController.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		198A490628C0EA49002B91A5 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				198A487128B24D79002B91A5 /* DashboardsViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		198A490728C0EA70002B91A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				19F7CBC2289D163F002BA027 /* Main.storyboard */,
+				19F7CBCA289D1640002BA027 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		19DA03E828AA483A0093AC1B /* Models */ = {
@@ -157,15 +193,14 @@
 		19F7CBBB289D163F002BA027 /* BugTracker2 */ = {
 			isa = PBXGroup;
 			children = (
+				198A490728C0EA70002B91A5 /* Storyboards */,
 				19DA03E828AA483A0093AC1B /* Models */,
 				1938B1EF28AA45B600DB1631 /* Views */,
 				1938B1EE28AA39D300DB1631 /* ViewControllers */,
 				19F7CBBC289D163F002BA027 /* AppDelegate.swift */,
 				19F7CBBE289D163F002BA027 /* SceneDelegate.swift */,
 				19F7CBC0289D163F002BA027 /* ViewController.swift */,
-				19F7CBC2289D163F002BA027 /* Main.storyboard */,
 				19F7CBC8289D1640002BA027 /* Assets.xcassets */,
-				19F7CBCA289D1640002BA027 /* LaunchScreen.storyboard */,
 				19F7CBCD289D1640002BA027 /* Info.plist */,
 				19F7CBC5289D163F002BA027 /* BugTracker2.xcdatamodeld */,
 			);
@@ -454,6 +489,7 @@
 				198A487028B24BF1002B91A5 /* AdminViewController.swift in Sources */,
 				19F7CBC7289D163F002BA027 /* BugTracker2.xcdatamodeld in Sources */,
 				198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */,
+				198A490328C0EA2E002B91A5 /* TeamPickerView.swift in Sources */,
 				19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */,
 				19F7CBC1289D163F002BA027 /* ViewController.swift in Sources */,
 				19F7CBBD289D163F002BA027 /* AppDelegate.swift in Sources */,
