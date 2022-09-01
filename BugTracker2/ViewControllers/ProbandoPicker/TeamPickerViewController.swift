@@ -10,9 +10,8 @@ import UIKit
 class TeamPickerViewController: UIViewController, TeamPickerDelegate{
     
     @IBOutlet var teamView: UIView!
-    
-    let textField = UITextField()
-    let pickerModal = UIButton(type: .custom)
+
+    let addBtn = UIButton(type: .custom)
     let teamTv = UITableView()
     var team = Set<teamMember>()
     var teamArray = [teamMember]()
@@ -20,35 +19,27 @@ class TeamPickerViewController: UIViewController, TeamPickerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.addSubview(textField)
-        self.view.addSubview(pickerModal)
+        self.view.addSubview(addBtn)
         self.view.addSubview(teamTv)
         configView()
     }
 
     
     func configView(){
-        self.textField.placeholder = "Playlist..."
-        self.textField.borderStyle = .roundedRect
-        self.textField.tintColor = .black
-        self.textField.translatesAutoresizingMaskIntoConstraints = false
-        self.textField.topAnchor.constraint(equalTo:self.view.topAnchor, constant: 50).isActive = true
-        self.textField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.textField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -70).isActive = true
-        self.textField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        self.pickerModal.backgroundColor = .lightGray
-        self.pickerModal.tintColor = .white
-        self.pickerModal.setImage(UIImage(systemName: "plus.rectangle.fill.on.rectangle.fill"), for: .normal)
-        self.pickerModal.translatesAutoresizingMaskIntoConstraints=false
-        self.pickerModal.topAnchor.constraint(equalTo:self.view.topAnchor, constant: 50).isActive = true
-        self.pickerModal.leadingAnchor.constraint(equalTo: textField.trailingAnchor, constant: 10).isActive = true
-        self.pickerModal.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.pickerModal.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        self.pickerModal.addTarget(self, action:#selector(showView), for: .touchUpInside)
+        let g = view.safeAreaLayoutGuide
+
+        self.addBtn.backgroundColor = .lightGray
+        self.addBtn.tintColor = .white
+        self.addBtn.setImage(UIImage(systemName: "plus.rectangle.fill.on.rectangle.fill"), for: .normal)
+        self.addBtn.translatesAutoresizingMaskIntoConstraints=false
+        self.addBtn.topAnchor.constraint(equalTo:self.view.topAnchor, constant: 100).isActive = true
+        self.addBtn.leadingAnchor.constraint(equalTo: g.trailingAnchor, constant: -100 ).isActive = true
+        self.addBtn.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.addBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.addBtn.addTarget(self, action:#selector(showView), for: .touchUpInside)
         
         self.teamTv.translatesAutoresizingMaskIntoConstraints=false
-        self.teamTv.topAnchor.constraint(equalTo:textField.bottomAnchor, constant: 20).isActive = true
+        self.teamTv.topAnchor.constraint(equalTo: g.topAnchor, constant: 200).isActive = true
         self.teamTv.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.teamTv.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.teamTv.bottomAnchor.constraint(equalTo:view.bottomAnchor, constant: -20).isActive = true
@@ -83,7 +74,6 @@ extension TeamPickerViewController : UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tmCell", for: indexPath)
         let tm = teamArray[indexPath.row]
         cell.textLabel?.text = tm.name
-        cell.backgroundColor = UIColor(named: "LigthPurple")
         return cell
     }
     

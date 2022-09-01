@@ -55,6 +55,7 @@ class TeamPickerView: UIView {
         if delegate != nil {
         let index = picker.selectedRow(inComponent: 0)
         let tm = team[index]
+            print(tm.name)
         delegate?.addTeamMember(tm: tm)
 
     }
