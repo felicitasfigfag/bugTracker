@@ -80,22 +80,17 @@ let bugTracker = Project(
                                                            other: "3e93949")])])
 
 let defaultProject = Project(
-                    info: projectInfo(title: "default",
+                    info: projectInfo(title: "Pending title",
                                       description: "default default"),
                     
                     sections: [SectionData(sectionTitle: "Tickets",
-                                           data: [dataItem(title: "default default",
-                                                           detail: "default",
-                                                           other: "default"),
-                                                  dataItem(title: "default",
-                                                           detail: "default",
-                                                           other: "default")]),
+                                           data: [dataItem(title: "You don't have any tickets yet",
+                                                           detail: "",
+                                                           other: "")
+                                                  ]),
                                SectionData(sectionTitle: "Team",
-                                           data: [dataItem(title: "default",
+                                           data: [dataItem(title: "There are no team members yet!",
                                                            detail: "default",
-                                                           other: "default"),
-                                                  dataItem(title: "default",
-                                                           detail: "default@gmail",
                                                            other: "default")])])
 
 let netflixClone = Project(
@@ -111,7 +106,7 @@ let netflixClone = Project(
                                                            detail: "villagrangregorio@gmail.com",
                                                            other: "876543456789")])])
 
-let projects = [bugTracker, netflixClone]
+var projects = [bugTracker, netflixClone]
 
 let team = [dataItem(title: "Felicitas", detail: "felifigueroaf@gmail.com", other: ""),
             dataItem(title: "Gregorio", detail: "villagrangregorio@gmail.com", other: ""),

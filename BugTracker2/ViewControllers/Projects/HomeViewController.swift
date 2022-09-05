@@ -15,7 +15,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         tv.delegate = self
         tv.dataSource = self
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tv.reloadData()
     }
 }
 

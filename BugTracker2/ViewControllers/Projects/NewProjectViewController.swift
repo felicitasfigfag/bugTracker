@@ -18,33 +18,31 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
     //TextFields
     @IBOutlet var projTitle : UITextField!
     @IBOutlet var projDescription: UITextField!
-    
+    //Action Btns
     @IBAction func saveProj(){
-        newProject()
-        showAlert(title: "Success", message: "Project Saved", actionTitle: "Go back")
+        let newProj = newProject()
+        if newProj.info.title != "" {
+            projects.append(newProj)
+            successAlert(title: "Success!", message: "Project Saved", actionTitle: "Back", vc: self)
+        }
+        else {
+            errorAlert(title: "Error", message: "Title needed to save", actionTitle: "Ok", vc: self)
+        }
     }
     
-    func newProject(){
-        let newProj = Project(info: projectInfo(title: projTitle.text ?? "",
-                                                description: projDescription!.text ?? ""),
-                              sections: [SectionData(sectionTitle: "Team", data: teamArray)])
-        print(newProj)
-    }
-    
-    func showAlert( title: String, message: String, actionTitle: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler:{_ in
-            self.dismiss(animated: true, completion: nil)
-        }))
-        self.present(alertController, animated: true, completion: nil)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.title = "New Project"
         teamTv.delegate = self
         teamTv.dataSource = self
+    }
+    ///Puts together the new Project object
+    func newProject() -> Project {
+        let newProj = Project(info: projectInfo(title: projTitle.text ?? "",
+                                                description: projDescription!.text ?? ""),
+                              sections: [SectionData(sectionTitle: "Team", data: teamArray)])
+        return newProj
     }
     
     /// Team
