@@ -130,7 +130,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oWd-d5-hQ2">
                                 <rect key="frame" x="20" y="155" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Information about the project" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKy-2w-q9v">
@@ -170,6 +170,14 @@
                                     <action selector="showPickerView" destination="JEb-W4-baO" eventType="touchUpInside" id="fzd-dQ-lad"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U84-9s-4z6">
+                                <rect key="frame" x="338" y="108" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save"/>
+                                <connections>
+                                    <action selector="saveProj" destination="JEb-W4-baO" eventType="touchUpInside" id="8yb-4c-bTi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q46-go-6J1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -179,6 +187,7 @@
                             <constraint firstItem="MUc-5g-u2h" firstAttribute="leading" secondItem="q46-go-6J1" secondAttribute="leading" constant="20" id="8FY-og-5y5"/>
                             <constraint firstItem="q46-go-6J1" firstAttribute="trailing" secondItem="xKy-2w-q9v" secondAttribute="trailing" constant="20" id="B3k-yN-JZ3"/>
                             <constraint firstItem="yJL-BJ-FED" firstAttribute="leading" secondItem="q46-go-6J1" secondAttribute="leading" constant="20" id="BgX-et-CQr"/>
+                            <constraint firstItem="oWd-d5-hQ2" firstAttribute="top" secondItem="U84-9s-4z6" secondAttribute="bottom" constant="16" id="CL2-QA-dBe"/>
                             <constraint firstItem="VP1-EX-NZI" firstAttribute="top" secondItem="5WN-ND-NNX" secondAttribute="bottom" constant="16" id="PlV-QZ-Qrb"/>
                             <constraint firstItem="q46-go-6J1" firstAttribute="trailing" secondItem="VP1-EX-NZI" secondAttribute="trailing" constant="20" id="QD7-sX-3Su"/>
                             <constraint firstItem="5WN-ND-NNX" firstAttribute="leading" secondItem="q46-go-6J1" secondAttribute="leading" constant="20" id="WNJ-R5-x5g"/>
@@ -189,18 +198,13 @@
                             <constraint firstItem="oWd-d5-hQ2" firstAttribute="top" secondItem="MUc-5g-u2h" secondAttribute="bottom" constant="16" id="jCk-o5-jO0"/>
                             <constraint firstItem="5WN-ND-NNX" firstAttribute="top" secondItem="xKy-2w-q9v" secondAttribute="bottom" constant="30" id="lNB-Hj-hG9"/>
                             <constraint firstItem="q46-go-6J1" firstAttribute="trailing" secondItem="C9k-U7-XM8" secondAttribute="trailing" constant="20" id="lip-P2-0n0"/>
+                            <constraint firstItem="q46-go-6J1" firstAttribute="trailing" secondItem="U84-9s-4z6" secondAttribute="trailing" constant="20" id="xhb-Rs-cox"/>
                             <constraint firstItem="xKy-2w-q9v" firstAttribute="leading" secondItem="q46-go-6J1" secondAttribute="leading" constant="20" id="yW9-Br-aBh"/>
                             <constraint firstItem="oWd-d5-hQ2" firstAttribute="leading" secondItem="q46-go-6J1" secondAttribute="leading" constant="20" id="ye3-MW-yEv"/>
                             <constraint firstItem="xKy-2w-q9v" firstAttribute="top" secondItem="yJL-BJ-FED" secondAttribute="bottom" constant="16" id="ykI-yi-acJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="nhR-Gn-O5d">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="CaC-lD-OlV">
-                            <connections>
-                                <action selector="saveProj" destination="JEb-W4-baO" id="53U-Qm-020"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="nhR-Gn-O5d"/>
                     <connections>
                         <outlet property="addBtn" destination="C9k-U7-XM8" id="djh-jC-Wvy"/>
                         <outlet property="projDescription" destination="xKy-2w-q9v" id="2XQ-0c-tNX"/>

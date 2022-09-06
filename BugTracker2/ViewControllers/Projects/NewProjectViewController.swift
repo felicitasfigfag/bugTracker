@@ -18,19 +18,7 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
     //TextFields
     @IBOutlet var projTitle : UITextField!
     @IBOutlet var projDescription: UITextField!
-    
-    //Action Btns
-    @IBAction func saveProj(){
-        let newProj = newProject()
-        if newProj.info.title != "" {
-            projects.append(newProj)
-            successAlert(title: "Success!", message: "Project Saved", actionTitle: "Back", vc: self)
-        }
-        else {
-            errorAlert(title: "Error", message: "Title needed to save", actionTitle: "Ok", vc: self)
-        }
-    }
-    
+
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,13 +28,17 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
         teamTv.dataSource = self
     }
     
-    
-    ///Puts together the new Project object
-    func newProject() -> Project {
-        let newProj = Project(info: projectInfo(title: projTitle.text ?? "",
-                              description: projDescription!.text ?? ""),
-            sections: [SectionData(sectionTitle: "Team", data: teamArray)])
-        return newProj
+    //Action Btns
+    @IBAction func saveProj(){
+        let newProj = newProject()
+        print("NEW PROJECT : ", newProj)
+        if newProj.info.title != "" {
+            projects.append(newProj)
+            successAlert(title: "Success!", message: "Project Saved", actionTitle: "Back", vc: self)
+        }
+        else {
+            errorAlert(title: "Error", message: "Title needed to save", actionTitle: "Ok", vc: self)
+        }
     }
     
     /// Team
@@ -72,7 +64,13 @@ extension NewProjectViewController : NewProjectDelegate {
         self.projDescription.text = p.info.description
         self.teamArray = p.sections[1].data
     }
-  
+    ///Puts together the new Project object
+    func newProject() -> Project {
+        let newProj = Project(info: projectInfo(title: projTitle.text ?? "",
+                              description: projDescription!.text ?? ""),
+            sections: [SectionData(sectionTitle: "Team", data: teamArray)])
+        return newProj
+    }
 }
 
 
