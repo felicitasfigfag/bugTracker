@@ -37,7 +37,7 @@ struct teamMember: Hashable {
 struct dataItem : Hashable {
     let title: String
     let detail: String
-    let other: String?
+    let other: String
 }
 
 // Section data (Project)

@@ -12,13 +12,21 @@ class ProjectViewController: UIViewController {
     var project : Project?
     @IBOutlet var tv: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tv.delegate = self
         tv.dataSource = self
         
     }
-    
+    @IBAction func editBtnAction(_ sender: Any) {
+
+        let vc : NewProjectViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NewProjectViewController") as! NewProjectViewController
+        vc.title = project?.info.title
+        self.present(vc, animated: false, completion: nil)
+        vc.fillProject(p: project!)
+    }
+
 }
 
 //aqui las celdas son las secciones
@@ -65,4 +73,10 @@ extension SectionData {
         self.sectionTitle = title
         self.data = data
     }
+}
+
+protocol NewProjectDelegate {
+
+    func fillProject(p: Project)
+
 }

@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         tv.reloadData()
     }
+    
 }
 
 

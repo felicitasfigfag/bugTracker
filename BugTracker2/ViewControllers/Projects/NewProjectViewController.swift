@@ -18,6 +18,7 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
     //TextFields
     @IBOutlet var projTitle : UITextField!
     @IBOutlet var projDescription: UITextField!
+    
     //Action Btns
     @IBAction func saveProj(){
         let newProj = newProject()
@@ -30,18 +31,21 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
         }
     }
     
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        self.title = "New Project"
+            self.title = "New Project"
         teamTv.delegate = self
         teamTv.dataSource = self
     }
+    
+    
     ///Puts together the new Project object
     func newProject() -> Project {
         let newProj = Project(info: projectInfo(title: projTitle.text ?? "",
-                                                description: projDescription!.text ?? ""),
-                              sections: [SectionData(sectionTitle: "Team", data: teamArray)])
+                              description: projDescription!.text ?? ""),
+            sections: [SectionData(sectionTitle: "Team", data: teamArray)])
         return newProj
     }
     
@@ -61,6 +65,16 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
     /// Text Fields
     
 }
+
+extension NewProjectViewController : NewProjectDelegate {
+    func fillProject(p: Project) {
+        self.projTitle.text = p.info.title
+        self.projDescription.text = p.info.description
+        self.teamArray = p.sections[1].data
+    }
+  
+}
+
 
 extension NewProjectViewController : UITableViewDataSource {
     

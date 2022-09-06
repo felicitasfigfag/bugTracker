@@ -111,7 +111,7 @@
         <!--New Project-->
         <scene sceneID="RD0-HZ-mwo">
             <objects>
-                <viewController title="New Project" id="JEb-W4-baO" customClass="NewProjectViewController" customModule="BugTracker2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewProjectViewController" title="New Project" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JEb-W4-baO" customClass="NewProjectViewController" customModule="BugTracker2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rHa-0R-C8J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,7 +266,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="maB-bz-Oq4">
                             <color key="tintColor" red="0.039215686270000001" green="0.37481403349999998" blue="0.99836754800000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="JEb-W4-baO" kind="show" id="KRT-fA-cFt"/>
+                                <segue destination="JEb-W4-baO" kind="show" id="vE2-cm-RyH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -479,7 +479,19 @@
                             <constraint firstItem="8fB-cc-owv" firstAttribute="top" secondItem="6JX-S6-AAl" secondAttribute="top" constant="10" id="zzY-PX-WMP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eQv-tf-9jA"/>
+                    <navigationItem key="navigationItem" id="eQv-tf-9jA">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" style="plain" id="5vM-ge-V0t">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="092-rv-gRL">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                <connections>
+                                    <action selector="editBtnAction:" destination="YSe-Wv-1Q8" eventType="touchUpInside" id="ekQ-df-CMv"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tv" destination="8fB-cc-owv" id="6tO-yg-mVs"/>
                     </connections>
