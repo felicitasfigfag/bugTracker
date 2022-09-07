@@ -17,14 +17,22 @@ class ProjectViewController: UIViewController {
         super.viewDidLoad()
         tv.delegate = self
         tv.dataSource = self
-        
     }
-    @IBAction func editBtnAction(_ sender: Any) {
+    @objc func signUpButtonPressedTapped()  {
 
-        let vc : NewProjectViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NewProjectViewController") as! NewProjectViewController
+       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       let vc = storyboard.instantiateViewController(withIdentifier: "NewProjectViewController") as! NewProjectViewController
+       self.navigationController?.pushViewController(vc, animated: true)
         vc.title = project?.info.title
-        self.present(vc, animated: false, completion: nil)
-        vc.fillProject(p: project!)
+        guard let project = project else {
+            return
+        }
+
+        vc.fillProject(p: project)
+    }
+    
+    @IBAction func editBtnAction(_ sender: Any)  {
+         signUpButtonPressedTapped()
     }
 
 }
@@ -74,9 +82,20 @@ extension SectionData {
         self.data = data
     }
 }
+extension ProjectViewController : ProjectViewControllerDelegate {
+    
+    func updateMain(p: Project) {
+        print("Updating main")
+        print("This is the new project ", p.info.title)
+        self.project = p
+    }
+}
 
 protocol NewProjectDelegate {
-
-    func fillProject(p: Project)
-
+    //from first to second: fills 2nd with project of first
+    func fillProject(p: Project?) async
+}
+protocol ProjectViewControllerDelegate {
+    //from second to first: Updates ProjectVC after edit in Newproject
+    func updateMain(p: Project)
 }

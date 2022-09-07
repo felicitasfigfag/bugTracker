@@ -14,7 +14,8 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
     @IBOutlet var addBtn : UIButton!
     var team = Set<dataItem>()
     var teamArray = [dataItem]()
-    
+    var dirty = false
+    var delegate2 : ProjectViewControllerDelegate?
     //TextFields
     @IBOutlet var projTitle : UITextField!
     @IBOutlet var projDescription: UITextField!
@@ -28,19 +29,7 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
         teamTv.dataSource = self
     }
     
-    //Action Btns
-    @IBAction func saveProj(){
-        let newProj = newProject()
-        print("NEW PROJECT : ", newProj)
-        if newProj.info.title != "" {
-            projects.append(newProj)
-            successAlert(title: "Success!", message: "Project Saved", actionTitle: "Back", vc: self)
-        }
-        else {
-            errorAlert(title: "Error", message: "Title needed to save", actionTitle: "Ok", vc: self)
-        }
-    }
-    
+
     /// Team
     @IBAction func showPickerView(){
         let picker = TeamPickerView (frame: CGRect(x: 0, y: 550, width: self.view.frame.width, height: self.view.frame.height/4))
@@ -54,15 +43,40 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
         teamTv.reloadData()
     }
     
-    /// Text Fields
+    /// Edit or save
+    
+    @IBAction func saveProj(){
+        let newProj = newProject()
+            if newProj.info.title != "" {
+                if dirty {
+                    delegate2?.updateMain(p: newProj)
+                    self.dismiss(animated: true)
+                }
+                else {
+                    projects.append(newProj)
+                }
+                successAlert(title: "Success!", message: "Project Saved", actionTitle: "Back", vc: self)
+            }
+            else {
+                errorAlert(title: "Error", message: "Title needed to save", actionTitle: "Ok", vc: self)
+            }
+        
+    }
     
 }
 
 extension NewProjectViewController : NewProjectDelegate {
-    func fillProject(p: Project) {
-        self.projTitle.text = p.info.title
-        self.projDescription.text = p.info.description
-        self.teamArray = p.sections[1].data
+        
+    func fillProject(p: Project?) {
+        guard let p = p else {return}
+        self.dirty = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.title = "Edit Project"
+            self.projTitle.text = p.info.title
+            self.projDescription.text = p.info.description
+            self.teamArray = p.sections[1].data
+        }
+        
     }
     ///Puts together the new Project object
     func newProject() -> Project {
