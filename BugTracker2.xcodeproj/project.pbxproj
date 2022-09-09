@@ -11,6 +11,7 @@
 		198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A487128B24D79002B91A5 /* DashboardsViewController.swift */; };
 		198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */; };
 		198A490328C0EA2E002B91A5 /* TeamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A490228C0EA2E002B91A5 /* TeamPickerView.swift */; };
+		199620F028CB846D00AA649C /* ModelsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199620EF28CB846D00AA649C /* ModelsAPI.swift */; };
 		19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */; };
 		19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */; };
 		19DA03EA28AA485A0093AC1B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* Models.swift */; };
@@ -53,6 +54,7 @@
 		198A487128B24D79002B91A5 /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
 		198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
 		198A490228C0EA2E002B91A5 /* TeamPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPickerView.swift; sourceTree = "<group>"; };
+		199620EF28CB846D00AA649C /* ModelsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsAPI.swift; sourceTree = "<group>"; };
 		19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		19DA03E928AA485A0093AC1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				19DA03E928AA485A0093AC1B /* Models.swift */,
+				199620EF28CB846D00AA649C /* ModelsAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				19F7CBBF289D163F002BA027 /* SceneDelegate.swift in Sources */,
 				19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */,
 				19E2D8D128C9F67500DA5357 /* Protocols.swift in Sources */,
+				199620F028CB846D00AA649C /* ModelsAPI.swift in Sources */,
 				19DA03EA28AA485A0093AC1B /* Models.swift in Sources */,
 				198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */,
 				19E2D8CE28C606B400DA5357 /* Utils.swift in Sources */,

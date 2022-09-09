@@ -66,14 +66,14 @@ extension TeamPickerView : UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         //estamos llenando el picker view, sacamos de la bd quienes estan disponibles para formar el team
         team.count
     }
 }
 extension TeamPickerView : UIPickerViewDelegate {
-    
+
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let tm = team[row]
         return tm.title
