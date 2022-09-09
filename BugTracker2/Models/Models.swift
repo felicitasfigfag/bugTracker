@@ -10,6 +10,7 @@ import Foundation
 
 // Project es el modelo de proyecto
 struct Project {
+    
     var info: projectInfo
     var sections: [SectionData]
     

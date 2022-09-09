@@ -8,6 +8,7 @@
 import UIKit
 
 class NewProjectViewController: UIViewController, TeamPickerDelegate {
+
     
     //team
     @IBOutlet var teamTv : UITableView!
@@ -15,16 +16,18 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
     var team = Set<dataItem>()
     var teamArray = [dataItem]()
     var dirty = false
+    var dirtyIndex = Int()
     var delegate2 : ProjectViewControllerDelegate?
     //TextFields
     @IBOutlet var projTitle : UITextField!
     @IBOutlet var projDescription: UITextField!
+    var delegate : ProjectViewControllerDelegate?
 
   
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-            self.title = "New Project"
+        self.title = "New Project"
         teamTv.delegate = self
         teamTv.dataSource = self
     }
@@ -43,17 +46,17 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
         teamTv.reloadData()
     }
     
-    /// Edit or save
     
     @IBAction func saveProj(){
         let newProj = newProject()
             if newProj.info.title != "" {
                 if dirty {
-                    delegate2?.updateMain(p: newProj)
+                    //delegate?.updateMain(p: newProj)
+                    updateProj(oldIndex: dirtyIndex, newProj: newProj)
                     self.dismiss(animated: true)
                 }
                 else {
-                    projects.append(newProj)
+                  projects.append(newProj)
                 }
                 successAlert(title: "Success!", message: "Project Saved", actionTitle: "Back", vc: self)
             }
@@ -63,17 +66,23 @@ class NewProjectViewController: UIViewController, TeamPickerDelegate {
         
     }
     
+    func updateProj(oldIndex: Int, newProj: Project){
+        projects.remove(at: oldIndex)
+        projects.insert(newProj, at: oldIndex)
+    }
 }
 
 extension NewProjectViewController : NewProjectDelegate {
         
-    func fillProject(p: Project?) {
+    func fillProject(p: Project?, i: Int) {
         guard let p = p else {return}
         self.dirty = true
+        self.dirtyIndex = i
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.title = "Edit Project"
             self.projTitle.text = p.info.title
             self.projDescription.text = p.info.description
+            //WHat
             self.teamArray = p.sections[1].data
         }
         
@@ -86,7 +95,6 @@ extension NewProjectViewController : NewProjectDelegate {
         return newProj
     }
 }
-
 
 extension NewProjectViewController : UITableViewDataSource {
     
@@ -109,3 +117,5 @@ extension NewProjectViewController : UITableViewDelegate {
         print(indexPath)
     }
 }
+
+
