@@ -1,0 +1,19 @@
+{
+  "Tickets": [
+    {
+      "id": 1,
+      "title": "Update interface",
+      "detail": "Create an interface to receive data from API"
+    },
+    {
+      "id": 2,
+      "title": "Create API",
+      "detail": "Follow medium article"
+    },
+    {
+      "id": 3,
+      "title": "Receive data from API",
+      "detail": "Read JSON file"
+    }
+  ]
+}
