@@ -79,6 +79,8 @@ extension ProjectViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let project = project else {return defaultProject.sections[section].data.count}
         return project[section].numberOfItems
+        
+
     }
 //generando secciones
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -86,6 +88,7 @@ extension ProjectViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: pString.cellIdentifier, for: indexPath)
         cell.textLabel?.text = section?.title
         cell.detailTextLabel?.text = section?.detail
+        cell.detailTextLabel?.textColor = .blue
         return cell
     }
    
