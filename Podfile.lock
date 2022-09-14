@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.6.2)
+  - TTGTagCollectionView (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - TTGTagCollectionView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - TTGTagCollectionView
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  TTGTagCollectionView: a2a8668c659b39e7a6ffd6590475ea53a7ae95f7
+
+PODFILE CHECKSUM: e1878085ad8529fe324cf5214e0a87cd731234d2
+
+COCOAPODS: 1.11.3
