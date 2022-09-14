@@ -16,6 +16,11 @@
 		199620F528CB88A300AA649C /* TicketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199620F428CB88A300AA649C /* TicketsModel.swift */; };
 		19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */; };
 		19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */; };
+		19CBFAA628D07F6600DA9BB9 /* RestServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFAA528D07F6600DA9BB9 /* RestServiceManager.swift */; };
+		19CBFAA928D0852A00DA9BB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CBFAA828D0852A00DA9BB9 /* CoreData.framework */; };
+		19CBFAAB28D086A300DA9BB9 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CBFAAA28D086A300DA9BB9 /* Network.framework */; };
+		19CBFAC728D0CCC500DA9BB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFAC528D0CCC500DA9BB9 /* Model.xcdatamodeld */; };
+		19CBFAC928D0CDDF00DA9BB9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFAC828D0CDDF00DA9BB9 /* Dynamic.swift */; };
 		19DA03EA28AA485A0093AC1B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* Models.swift */; };
 		19E2D8CE28C606B400DA5357 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2D8CD28C606B400DA5357 /* Utils.swift */; };
 		19E2D8D128C9F67500DA5357 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2D8D028C9F67500DA5357 /* Protocols.swift */; };
@@ -23,7 +28,6 @@
 		19F7CBBF289D163F002BA027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7CBBE289D163F002BA027 /* SceneDelegate.swift */; };
 		19F7CBC1289D163F002BA027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7CBC0289D163F002BA027 /* ViewController.swift */; };
 		19F7CBC4289D163F002BA027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F7CBC2289D163F002BA027 /* Main.storyboard */; };
-		19F7CBC7289D163F002BA027 /* BugTracker2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19F7CBC5289D163F002BA027 /* BugTracker2.xcdatamodeld */; };
 		19F7CBC9289D1640002BA027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F7CBC8289D1640002BA027 /* Assets.xcassets */; };
 		19F7CBCC289D1640002BA027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F7CBCA289D1640002BA027 /* LaunchScreen.storyboard */; };
 		19F7CBD7289D1640002BA027 /* BugTracker2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7CBD6289D1640002BA027 /* BugTracker2Tests.swift */; };
@@ -61,6 +65,11 @@
 		199620F428CB88A300AA649C /* TicketsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsModel.swift; sourceTree = "<group>"; };
 		19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		19CBFAA528D07F6600DA9BB9 /* RestServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceManager.swift; sourceTree = "<group>"; };
+		19CBFAA828D0852A00DA9BB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		19CBFAAA28D086A300DA9BB9 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		19CBFAC628D0CCC500DA9BB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		19CBFAC828D0CDDF00DA9BB9 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		19DA03E928AA485A0093AC1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		19E2D8CD28C606B400DA5357 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		19E2D8D028C9F67500DA5357 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -69,7 +78,6 @@
 		19F7CBBE289D163F002BA027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		19F7CBC0289D163F002BA027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19F7CBC3289D163F002BA027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		19F7CBC6289D163F002BA027 /* BugTracker2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BugTracker2.xcdatamodel; sourceTree = "<group>"; };
 		19F7CBC8289D1640002BA027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19F7CBCB289D1640002BA027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19F7CBCD289D1640002BA027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +103,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C450B12EF613C994EA0FD0B6 /* Pods_BugTracker2.framework in Frameworks */,
+				19CBFAA928D0852A00DA9BB9 /* CoreData.framework in Frameworks */,
+				19CBFAAB28D086A300DA9BB9 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +192,14 @@
 			path = Tickets;
 			sourceTree = "<group>";
 		};
+		19CBFAA428D07F5300DA9BB9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				19CBFAA528D07F6600DA9BB9 /* RestServiceManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		19DA03E828AA483A0093AC1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,16 +242,18 @@
 		19F7CBBB289D163F002BA027 /* BugTracker2 */ = {
 			isa = PBXGroup;
 			children = (
+				19CBFAA428D07F5300DA9BB9 /* Network */,
 				19E2D8CF28C63E0E00DA5357 /* Utils */,
 				198A490728C0EA70002B91A5 /* Storyboards */,
 				19DA03E828AA483A0093AC1B /* Models */,
 				1938B1EF28AA45B600DB1631 /* Views */,
 				1938B1EE28AA39D300DB1631 /* ViewControllers */,
 				19F7CBBC289D163F002BA027 /* AppDelegate.swift */,
+				19CBFAC828D0CDDF00DA9BB9 /* Dynamic.swift */,
 				19F7CBBE289D163F002BA027 /* SceneDelegate.swift */,
 				19F7CBC8289D1640002BA027 /* Assets.xcassets */,
 				19F7CBCD289D1640002BA027 /* Info.plist */,
-				19F7CBC5289D163F002BA027 /* BugTracker2.xcdatamodeld */,
+				19CBFAC528D0CCC500DA9BB9 /* Model.xcdatamodeld */,
 			);
 			path = BugTracker2;
 			sourceTree = "<group>";
@@ -271,6 +291,8 @@
 		F92FFDD23787427A5464C548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19CBFAAA28D086A300DA9BB9 /* Network.framework */,
+				19CBFAA828D0852A00DA9BB9 /* CoreData.framework */,
 				FD0EAC01172DC13765965786 /* Pods_BugTracker2.framework */,
 				808B804349988B0164CA4A63 /* Pods_BugTracker2_BugTracker2UITests.framework */,
 				66F13B1A96A48CD469148AC6 /* Pods_BugTracker2Tests.framework */,
@@ -518,13 +540,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				198A487028B24BF1002B91A5 /* AdminViewController.swift in Sources */,
+				19CBFAA628D07F6600DA9BB9 /* RestServiceManager.swift in Sources */,
 				199620F228CB878700AA649C /* TicketsViewController.swift in Sources */,
-				19F7CBC7289D163F002BA027 /* BugTracker2.xcdatamodeld in Sources */,
+				19CBFAC928D0CDDF00DA9BB9 /* Dynamic.swift in Sources */,
 				198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */,
 				198A490328C0EA2E002B91A5 /* TeamPickerView.swift in Sources */,
 				199620F528CB88A300AA649C /* TicketsModel.swift in Sources */,
 				19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */,
 				19F7CBC1289D163F002BA027 /* ViewController.swift in Sources */,
+				19CBFAC728D0CCC500DA9BB9 /* Model.xcdatamodeld in Sources */,
 				19F7CBBD289D163F002BA027 /* AppDelegate.swift in Sources */,
 				19F7CBBF289D163F002BA027 /* SceneDelegate.swift in Sources */,
 				19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */,
@@ -710,6 +734,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD464PCRMP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BugTracker2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -738,6 +763,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD464PCRMP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BugTracker2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -876,13 +902,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		19F7CBC5289D163F002BA027 /* BugTracker2.xcdatamodeld */ = {
+		19CBFAC528D0CCC500DA9BB9 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				19F7CBC6289D163F002BA027 /* BugTracker2.xcdatamodel */,
+				19CBFAC628D0CCC500DA9BB9 /* Model.xcdatamodel */,
 			);
-			currentVersion = 19F7CBC6289D163F002BA027 /* BugTracker2.xcdatamodel */;
-			path = BugTracker2.xcdatamodeld;
+			currentVersion = 19CBFAC628D0CCC500DA9BB9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

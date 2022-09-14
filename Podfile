@@ -7,6 +7,8 @@ target 'BugTracker2' do
 
   # Pods for BugTracker2
   pod 'TTGTagCollectionView'
+  pod 'Alamofire'
+
   target 'BugTracker2Tests' do
     inherit! :search_paths
     # Pods for testing
