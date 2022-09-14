@@ -11,9 +11,7 @@
 		198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A487128B24D79002B91A5 /* DashboardsViewController.swift */; };
 		198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */; };
 		198A490328C0EA2E002B91A5 /* TeamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A490228C0EA2E002B91A5 /* TeamPickerView.swift */; };
-		199620F028CB846D00AA649C /* ModelsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199620EF28CB846D00AA649C /* ModelsAPI.swift */; };
 		199620F228CB878700AA649C /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199620F128CB878700AA649C /* TicketsViewController.swift */; };
-		199620F528CB88A300AA649C /* TicketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199620F428CB88A300AA649C /* TicketsModel.swift */; };
 		19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */; };
 		19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */; };
 		19CBFAA628D07F6600DA9BB9 /* RestServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFAA528D07F6600DA9BB9 /* RestServiceManager.swift */; };
@@ -21,7 +19,10 @@
 		19CBFAAB28D086A300DA9BB9 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CBFAAA28D086A300DA9BB9 /* Network.framework */; };
 		19CBFAC728D0CCC500DA9BB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFAC528D0CCC500DA9BB9 /* Model.xcdatamodeld */; };
 		19CBFAC928D0CDDF00DA9BB9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFAC828D0CDDF00DA9BB9 /* Dynamic.swift */; };
-		19DA03EA28AA485A0093AC1B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* Models.swift */; };
+		19CBFACB28D1C92900DA9BB9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFACA28D1C92900DA9BB9 /* Models.swift */; };
+		19CBFACD28D1C9AA00DA9BB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFACC28D1C9AA00DA9BB9 /* Extensions.swift */; };
+		19CBFACF28D1CAE700DA9BB9 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBFACE28D1CAE700DA9BB9 /* APIRequests.swift */; };
+		19DA03EA28AA485A0093AC1B /* MockModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA03E928AA485A0093AC1B /* MockModels.swift */; };
 		19E2D8CE28C606B400DA5357 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2D8CD28C606B400DA5357 /* Utils.swift */; };
 		19E2D8D128C9F67500DA5357 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2D8D028C9F67500DA5357 /* Protocols.swift */; };
 		19F7CBBD289D163F002BA027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7CBBC289D163F002BA027 /* AppDelegate.swift */; };
@@ -60,9 +61,7 @@
 		198A487128B24D79002B91A5 /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
 		198A48B428BCB3F7002B91A5 /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
 		198A490228C0EA2E002B91A5 /* TeamPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPickerView.swift; sourceTree = "<group>"; };
-		199620EF28CB846D00AA649C /* ModelsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsAPI.swift; sourceTree = "<group>"; };
 		199620F128CB878700AA649C /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
-		199620F428CB88A300AA649C /* TicketsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsModel.swift; sourceTree = "<group>"; };
 		19BBBF5F28AA89C700798EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19BBBF6128AA8E3300798EE8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		19CBFAA528D07F6600DA9BB9 /* RestServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceManager.swift; sourceTree = "<group>"; };
@@ -70,7 +69,10 @@
 		19CBFAAA28D086A300DA9BB9 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 		19CBFAC628D0CCC500DA9BB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		19CBFAC828D0CDDF00DA9BB9 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		19DA03E928AA485A0093AC1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		19CBFACA28D1C92900DA9BB9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		19CBFACC28D1C9AA00DA9BB9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		19CBFACE28D1CAE700DA9BB9 /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		19DA03E928AA485A0093AC1B /* MockModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModels.swift; sourceTree = "<group>"; };
 		19E2D8CD28C606B400DA5357 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		19E2D8D028C9F67500DA5357 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		19F7CBB9289D163F002BA027 /* BugTracker2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugTracker2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				199620F128CB878700AA649C /* TicketsViewController.swift */,
-				199620F428CB88A300AA649C /* TicketsModel.swift */,
 			);
 			path = Tickets;
 			sourceTree = "<group>";
@@ -196,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				19CBFAA528D07F6600DA9BB9 /* RestServiceManager.swift */,
+				19CBFACE28D1CAE700DA9BB9 /* APIRequests.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -203,8 +205,9 @@
 		19DA03E828AA483A0093AC1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				19DA03E928AA485A0093AC1B /* Models.swift */,
-				199620EF28CB846D00AA649C /* ModelsAPI.swift */,
+				19DA03E928AA485A0093AC1B /* MockModels.swift */,
+				19CBFACA28D1C92900DA9BB9 /* Models.swift */,
+				19CBFACC28D1C9AA00DA9BB9 /* Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -545,16 +548,17 @@
 				19CBFAC928D0CDDF00DA9BB9 /* Dynamic.swift in Sources */,
 				198A487228B24D79002B91A5 /* DashboardsViewController.swift in Sources */,
 				198A490328C0EA2E002B91A5 /* TeamPickerView.swift in Sources */,
-				199620F528CB88A300AA649C /* TicketsModel.swift in Sources */,
+				19CBFACD28D1C9AA00DA9BB9 /* Extensions.swift in Sources */,
 				19BBBF6028AA89C700798EE8 /* HomeViewController.swift in Sources */,
 				19F7CBC1289D163F002BA027 /* ViewController.swift in Sources */,
 				19CBFAC728D0CCC500DA9BB9 /* Model.xcdatamodeld in Sources */,
+				19CBFACF28D1CAE700DA9BB9 /* APIRequests.swift in Sources */,
 				19F7CBBD289D163F002BA027 /* AppDelegate.swift in Sources */,
 				19F7CBBF289D163F002BA027 /* SceneDelegate.swift in Sources */,
 				19BBBF6228AA8E3300798EE8 /* ProjectViewController.swift in Sources */,
 				19E2D8D128C9F67500DA5357 /* Protocols.swift in Sources */,
-				199620F028CB846D00AA649C /* ModelsAPI.swift in Sources */,
-				19DA03EA28AA485A0093AC1B /* Models.swift in Sources */,
+				19DA03EA28AA485A0093AC1B /* MockModels.swift in Sources */,
+				19CBFACB28D1C92900DA9BB9 /* Models.swift in Sources */,
 				198A48B528BCB3F7002B91A5 /* NewProjectViewController.swift in Sources */,
 				19E2D8CE28C606B400DA5357 /* Utils.swift in Sources */,
 			);
